@@ -1,41 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace kosztDruku
+namespace PrintCost
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int BooksCount, BookCost, TotalCost;
             Console.WriteLine("What is the amount of books you would like to print?");
-            while ( !int.TryParse(Console.ReadLine(), out BooksCount) )
+            int booksCount;
+            while (!int.TryParse(Console.ReadLine(), out booksCount))
             {
-                Console.WriteLine("Error");
-                Console.WriteLine("Please enter valid value:");
+                Console.WriteLine("\rError\nPlease enter valid value:");
             }
-
-            /*Calculate cost for single book*/
-            if( BooksCount > 1000 )
-            {
-                BookCost = 10;
-            } 
-            else if ( BooksCount > 500)
-            {
-                BookCost = 12;
-            }
-            else
-            {
-                BookCost = 15;
-            }
-
-            TotalCost = BookCost * BooksCount;
-            Console.WriteLine("Total cost: " + TotalCost);
-
+            var bookCost = CalculateBookCost(booksCount);
+            var totalCost = bookCost * booksCount;
+            Console.WriteLine("Total cost: " + totalCost);
             Console.Read();
+        }
+
+        private static int CalculateBookCost(int booksCount)
+        {
+            if (booksCount > 1000)
+                return 10;
+            else if (booksCount > 500)
+                return 12;
+            else
+                return 15;
         }
     }
 }
