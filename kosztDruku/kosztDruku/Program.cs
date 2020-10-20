@@ -10,7 +10,7 @@ namespace PrintCost
             int booksCount;
             while (!int.TryParse(Console.ReadLine(), out booksCount))
             {
-                Console.WriteLine("\rError\nPlease enter valid value:");
+                Console.WriteLine("Error\nPlease enter valid value:");
             }
             var bookCost = CalculateBookCost(booksCount);
             var totalCost = bookCost * booksCount;
