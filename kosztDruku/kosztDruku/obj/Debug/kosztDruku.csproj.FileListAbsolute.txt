@@ -1,0 +1,7 @@
+C:\Users\Dell\source\repos\kosztDruku\kosztDruku\bin\Debug\kosztDruku.exe.config
+C:\Users\Dell\source\repos\kosztDruku\kosztDruku\bin\Debug\kosztDruku.exe
+C:\Users\Dell\source\repos\kosztDruku\kosztDruku\bin\Debug\kosztDruku.pdb
+C:\Users\Dell\source\repos\kosztDruku\kosztDruku\obj\Debug\kosztDruku.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\kosztDruku\kosztDruku\obj\Debug\kosztDruku.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\kosztDruku\kosztDruku\obj\Debug\kosztDruku.exe
+C:\Users\Dell\source\repos\kosztDruku\kosztDruku\obj\Debug\kosztDruku.pdb
